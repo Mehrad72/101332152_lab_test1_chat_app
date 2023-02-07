@@ -27,12 +27,12 @@
         e.preventDefault();
 
         var userData = {
-          username: $("#username").val(),
-          firstname: $("#firstname").val(),
-          lastname: $("#lastname").val(),
-          password: $("#password").val()
+          username: $("input[name=username]").val(),
+          firstname: $("input[name=firstname]").val(),
+          lastname: $("input[name=lastname]").val(),
+          password: $("input[name=password]").val()
         };
-
+        
         $.ajax({
           type: "POST",
           url: "/signup",

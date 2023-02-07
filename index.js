@@ -105,7 +105,6 @@ passport.use(new LocalStrategy({
     });
   }));
   
-  // Serialize and deserialize user
   passport.serializeUser((user, done) => {
     done(null, user.id);
   });
